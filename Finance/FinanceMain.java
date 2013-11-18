@@ -6,11 +6,21 @@
 
 public class FinanceMain
 {
-	public FinanceMain(int emplID)
+	private int empleID;
+	private String emplName;
+	private int dept; //department should be a number for a clarification
+
+	public FinanceMain(int emplID, String emplName, int dept)
 	{
-		//Chceck emplID with database -> match with finance department?
-		
-		//Ch
+		this.empleID = emplID;
+		this.emplName = emplName;
+		this.dept = dept;
 	}
+	
+	public void checkValidity()
+	{
+		//check with database if the person is in finance deptment
+	}
+	
 
 }
